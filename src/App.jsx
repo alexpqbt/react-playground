@@ -2,6 +2,7 @@ import "./App.css";
 import QuickStart from "./playground/quickstart/QuickStart";
 import Profile from "./playground/quickstart/DisplayingData";
 import ConditionalRendering from "./playground/quickstart/ConditionalRendering";
+import RenderingList from "./playground/quickstart/RenderingList";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <QuickStart />
         <Profile />
         <ConditionalRendering />
+        <RenderingList />
       </div>
     </div>
   );
