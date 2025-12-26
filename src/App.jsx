@@ -1,11 +1,21 @@
-import './App.css'
+import "./App.css";
+import QuickStart from "./playground/quickstart/QuickStart";
 
 function App() {
   return (
-    <>
-      <h1>Hello World!</h1>
-    </>
-  )
+    <div className="m-10">
+      <h1 className="font-bold text-lg">
+        I am following the{" "}
+        <a href="https://react.dev/learn" className="text-violet-500 underline">
+          documentation.
+        </a>
+      </h1>
+
+      <div className="playground">
+        <QuickStart />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
