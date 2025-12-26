@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.playground .component {
+  @apply outline-solid p-1 m-1;
+}
