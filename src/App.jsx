@@ -1,8 +1,8 @@
 import "./App.css";
-import QuickStart from "./playground/quickstart/QuickStart";
-import Profile from "./playground/quickstart/DisplayingData";
-import ConditionalRendering from "./playground/quickstart/ConditionalRendering";
-import RenderingList from "./playground/quickstart/RenderingList";
+import QuickStart from "./playground/learn/QuickStart";
+import Profile from "./playground/learn/DisplayingData";
+import ConditionalRendering from "./playground/learn/ConditionalRendering";
+import RenderingList from "./playground/learn/RenderingList";
 
 function App() {
   return (
