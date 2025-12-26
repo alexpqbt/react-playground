@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function AdminPanel() {
   return (
     <div>
@@ -15,7 +17,8 @@ function LoginForm() {
 }
 
 export default function ConditionalRendering() {
-  const isLoggedIn = true;
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [count, setCount] = useState(0);
 
   // let content;
   // if (isLoggedIn) {
@@ -26,8 +29,20 @@ export default function ConditionalRendering() {
 
   // return <div className="component">{content}</div>;
 
+  function handleClick() {
+    setIsLoggedIn(!isLoggedIn);
+    setCount(count + 1);
+  }
+
   return (
     <div className="component">
+      <button
+        onClick={handleClick}
+        className="bg-gray-200 outline-1 outline-solid cursor-pointer"
+      >
+        is logged in?
+      </button>
+      <span className="ml-1">ive clicked this button {count} times</span>
       {isLoggedIn ? <AdminPanel /> : <LoginForm />}
     </div>
   );
