@@ -1,5 +1,6 @@
 import "./App.css";
 import QuickStart from "./playground/quickstart/QuickStart";
+import Profile from "./playground/quickstart/DisplayingData";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
 
       <div className="playground">
         <QuickStart />
+        <Profile />
       </div>
     </div>
   );
